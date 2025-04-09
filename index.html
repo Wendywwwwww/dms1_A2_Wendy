@@ -1,0 +1,48 @@
+<html>
+
+    <head>
+        <title>
+            DMS1_Assignment 2
+        </title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    </head>
+
+    <body style="background-color: rgb(200, 240, 241);">
+        <!-- <h1>
+            Hello world!
+        </h1>
+       
+        <p>
+            Contents here
+        </p>
+        
+        <h2>
+            Another title
+        </h2>
+
+        <p>
+            before break
+            <br>
+            after break
+        </p> -->
+
+        <img id="image1" src="imgs\1.png" width="200"/>
+        <img id="image2" src="imgs\2.png" width="200"/>
+        <img id="image3" src="imgs\3.png" width="200"/>
+
+        <script>
+            var sound1 = new buzz.sound("sounds\sound1.mp3");
+            var sound2 = new buzz.sound("sounds\sound2.m4a");
+            var sound3 = new buzz.sound("sounds\sound3.m4a");
+
+            window.onload = function() {
+                document.getElementById('image1').addEventListener('click', function() {sound1.play();});
+            };
+
+        </script>
+
+
+    </body>
+
+</html>
